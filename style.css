@@ -1,14 +1,17 @@
 body {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 15px;
   color: #666666;
-  height: 100%;
   background-color: #fff;
   box-sizing: border-box;
 }
 
-.container{
-  max-width: 1200px;
+.container {
+  max-width: 1360px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -17,13 +20,15 @@ body {
 }
 
 .nav-bar {
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   align-items: center;
-  background-color: transparent;
-  /* background-color: palegoldenrod; */
+  background-color: #fff;
   height: 100%;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  margin: auto
 }
 
 .logo {
@@ -49,9 +54,9 @@ body {
   flex-grow: 1;
 }
 
-.nav-end img{
-  padding-left: 12px;
-  height: 22px;
+.nav-end img {
+  padding-left: 24px;
+  height: 24px;
 }
 
 ul,
@@ -59,7 +64,9 @@ li {
   display: flex;
   align-items: center;
   height: 100%;
-  font-family: Poppins-Medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 450;
+  font-style: normal;
   font-size: 14px;
 }
 
@@ -69,11 +76,81 @@ a {
   background-color: transparent;
 }
 
-a:hover{
+a:hover {
   color: #6c7ae0;
 }
 
-.menu ul li{
+.menu ul li {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.active a {
+  color: #6c7ae0;
+}
+
+.banner {
+  width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+
+.banner-text {
+  display: flex;
+  font-size: 82px;
+  font-weight: 600;
+  position: absolute;
+  flex-direction: column;
+  height: 70%;
+  width: 1200px;
+  margin: auto;
+  justify-content: center;
+}
+
+.banner-text div:nth-child(2) {
+  display: flex;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.cat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.cat>div {
+  border: 1px solid #8a8a8a;
+  /* margin: 25px; */
+}
+
+.cat div img {
+  height: 248px;
+  object-fit: cover;
+}
+
+.text-cat {
+  padding-left: 25px;
+  display: flex;
+  font-weight: 600;
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  height: 150px;
+}
+
+.text-cat>div:nth-child(1) {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 0.8;
+}
+
+.product-t {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
